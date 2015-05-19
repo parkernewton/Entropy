@@ -19,7 +19,7 @@
 #include <math.h> 
 
 // The size of our byte sequence 
-#define SIZE 4000000
+#define SIZE 1048576 
 
 // The size of our frequency array 
 #define NUM_CHARS 256 
