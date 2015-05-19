@@ -39,7 +39,7 @@ int main(void) {
 		}
 	}
 	for(i = 0; i < SIZE; ++i){
-		fprintf(stdout, "\n%hhu \n", str[i]); 
+		fprintf(stdout, "%hhu\t", str[i]); 
 	}
 	return 0; 
 }

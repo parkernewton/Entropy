@@ -22,14 +22,14 @@ int main(void) {
 	int freq[NUM_CHARS]; 
 	for(i = 0; i < NUM_CHARS; ++i)
 		freq[i] = 0; 
-	while(fscanf(stdin, "%hhu", &buf) == 1){  
+	while(fscanf(stdin, "%hhu", &buf) == 1){   
 		++freq[buf]; 
 		++count; 
-	} 
+	}  
 	for(i = 0; i < NUM_CHARS; ++i){
 		prob = (double)freq[i] / (double)count; 
-		entropy += prob * log2(1 / prob);   
+		entropy += freq[i] != 0 ? prob * log2(1 / prob) : 0;   
 	}
-	printf("\nEntropy: %lf\n", entropy); 
+	printf("\nEntropy: %0.4lf\n", entropy); 
 }
 
