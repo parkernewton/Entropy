@@ -14,10 +14,7 @@
 #include <math.h> 
 
 #define SIZE 4000000
-#define NUM_CHARS 256
-
-int partition(int a[], int lo, int hi); 
-void quickSort(int a[], int lo, int hi); 
+#define NUM_CHARS 256 
 
 int main(void) { 
 	unsigned char str[SIZE]; 
